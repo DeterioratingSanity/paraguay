@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Paraguay</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url("paraguayheroX.jpg");
+            width:100%;
+            background-attachment: fixed;
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        #hero{
+            text-align:center;
+            min-height:125vh;
+        }
+        #heroText{
+            margin-top:0;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family:fantasy;
+            font-weight: bold;
+            font-size: 10em;
+            color:white;
+            letter-spacing:4px;
+            font-variant:small-caps;
+            
+        }
+        .heroMid{
+            vertical-align:middle;
+        }
+        /*
+        #heroLine{
+            text-decoration:underline 5px;   
+        }
+        */
+        #heroLine::after{
+           content : "";
+           position : absolute;
+           width : 70%;
+           height : 5px;
+           background-color: white;
+           top: 75%;
+           left: 13.5%;  
+        }
+        
+        #sectionOne{
+            min-height:200vh;
+            position:relative;
+            top:0;
+            background-color:#FDFD96;
+            border-top: 10px solid #b3b35f;
+            border-bottom: 10px solid #b3b35f;
+            transform: skewY(-5deg);
+            margin-bottom:-30vh;
+        }
+        #sectionTwo{
+            min-height:200vh;
+            position:relative;
+            top:0;
+            background-color:#AEC6CF;
+            border-top: 10px solid #7896a1;
+            border-bottom: 10px solid #7896a1;
+            transform: skewY(5deg);
+            margin-bottom:-20vh;
+        }
+        #sectionThree{
+            min-height:200vh;
+            position:relative;
+            top:0;
+            background-color:#ff6961;
+            border-top: 10px solid #b0403a;
+            border-bottom: 10px solid #b0403a;
+            transform: skewY(-5deg);
+            margin-bottom:-20vh;
+        }
+        #sectionFour{
+            min-height:200vh;
+            position:relative;
+            top:0;
+            background-color:#77DD77;
+            border-top: 10px solid #339633;
+            border-bottom: 10px solid #339633;
+            transform: skewY(5deg);
+            margin-bottom:-20vh;
+        }
+        #sectionFive{
+            min-height:200vh;
+            position:relative;
+            top:0;
+            background-color:#C3B1E1;
+            border-top: 10px solid #81709e;
+            border-bottom: 10px solid #81709e;
+            transform: skewY(-5deg);
+            margin-bottom:-20vh;
+        }
+        #sectionSix{
+            min-height:200vh;
+            position:relative;
+            top:0;
+            background-color:#FAC898;
+            border-top: 10px solid #d19b66;
+            border-bottom: 10px solid #d19b66;
+            transform: skewY(5deg);
+            margin-bottom:-20vh;
+        }
+        .content{
+            position:sticky;
+            top:80px;
+            margin-top:30px; 
+            margin-bottom:30px; 
+            text-align:center;
+        }
+        .left{
+            transform:skewY(5deg);
+        }
+        .right{
+            transform:skewY(-5deg);
+        }
+        
+        #bottom{
+            min-height:50vh;   
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hero">
+        <p id="heroText"><span class="heroMid">P</span><span id="heroLine">aragua</span><span class="heroMid">Y</span></p>
+    </div>
+    
+    <div id="sectionOne">
+        <div class="content left">Travel</div>
+    </div>
+    <div id="sectionTwo">
+        <div class="content right">Tour</div>
+    </div>
+    <div id="sectionThree">
+        <div class="content left">History</div>
+    </div>
+    <div id="sectionFour">
+        <div class="content right">Culture</div>
+    </div>
+    <div id="sectionFive">
+        <div class="content left">Current</div>
+    </div>
+    <div id="sectionSix">
+        <div class="content right">Cuisine</div>
+    </div>
+    
+    <div id="bottom"></div>
+</body>
