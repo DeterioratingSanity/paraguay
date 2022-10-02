@@ -2,6 +2,11 @@
 
 <head>
     <title>Paraguay</title>
+    <link
+     rel="icon"
+     type="image/x-icon"
+     href="favicon.svg"
+    >
     <style>
         body{
             margin: 0;
@@ -27,14 +32,14 @@
             letter-spacing:4px;
             font-variant:small-caps;
             white-space:nowrap;
-            
+
         }
         .heroMid{
             vertical-align:middle;
         }
         /*
         #heroLine{
-            text-decoration:underline 5px;   
+            text-decoration:underline 5px;
         }
         */
         #heroLine::after{
@@ -44,9 +49,9 @@
            height : 5px;
            background-color: white;
            top: 75%;
-           left: 13.5%;  
+           left: 13.5%;
         }
-        
+
         #sectionOne{
             min-height:200vh;
             position:relative;
@@ -107,11 +112,31 @@
             transform: skewY(5deg);
             margin-bottom:-20vh;
         }
+        #sectionSeven{
+            min-height:200vh;
+            position:relative;
+            top:0;
+            background-color:#A4D8D8;
+            border-top: 10px solid #649e9e;
+            border-bottom: 10px solid #649e9e;
+            transform: skewY(-5deg);
+            margin-bottom:-20vh;
+        }
+        #sectionEight{
+            min-height:50vh;
+            position:relative;
+            top:0;
+            background-color:#FAC898;
+            border-top: 10px solid #d19b66;
+            border-bottom: 10px solid #d19b66;
+            transform: skewY(5deg);
+        }
+
         .content{
             position:sticky;
             top:80px;
-            margin-top:30px; 
-            margin-bottom:30px; 
+            margin-top:30px;
+            margin-bottom:30px;
             text-align:center;
         }
         .left{
@@ -120,9 +145,36 @@
         .right{
             transform:skewY(-5deg);
         }
-        
+
         #bottom{
-            min-height:50vh;   
+            min-height:30vh;
+            margin-top:-10vh;
+            position:relative;
+            top:0;
+            background-color:rgba(200,150,150,0);
+            transform: skewY(5deg);
+            z-index:-1;
+        }
+        #footerUp{
+            min-height:28vh;
+            background-color:#FAC898;
+            transform: skewY(5deg);
+            margin-bottom:-20vh;
+            border-top: 10px solid #d19b66;
+        }
+        #footerDown{
+          min-height:30vh;
+          background-color:#FAC898;
+        }
+        #footText{
+          margin-top:17vh;
+          font-weight: bold;
+          font-size: 2em;
+          line-height:.5em;
+          color:white;
+          letter-spacing:4px;
+          font-variant:small-caps;
+          text-align:center;
         }
     </style>
 </head>
@@ -131,7 +183,7 @@
     <div id="hero">
         <p id="heroText"><span class="heroMid">P</span><span id="heroLine">aragua</span><span class="heroMid">Y</span></p>
     </div>
-    
+
     <div id="sectionOne">
         <div class="content left">Travel</div>
     </div>
@@ -150,6 +202,16 @@
     <div id="sectionSix">
         <div class="content right">Cuisine</div>
     </div>
-    
+    <div id="sectionSeven">
+        <div class="content left">Sources</div>
+    </div>
+    <div id="sectionEight">
+        <div class="content right"></div>
+    </div>
+
     <div id="bottom"></div>
+    <div id="footerUp">
+        <div class="right" id="footText">Produced by Wyatt Wilson</div>
+    </div>
+    <div id="footerDown"></div>
 </body>
